@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Фото: светлые брови после окрашивания">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#F2ECF7"/><stop offset="1" stop-color="#DFD3EC"/>
+  </linearGradient>
+  <clipPath id="c"><rect width="600" height="600"/></clipPath>
+</defs>
+<g clip-path="url(#c)">
+  <rect width="600" height="600" fill="url(#g)"/>
+  <circle cx="174" cy="234" r="204" fill="#7A6494" opacity="0.12"/>
+  <g transform="rotate(9 444 432)" opacity="0.14">
+    <rect x="348" y="312" width="240" height="264" rx="84" fill="#7A6494"/>
+  </g>
+  <g transform="translate(300 270)" fill="none" stroke="#7A6494" stroke-opacity="0.55" stroke-width="4.8" stroke-linejoin="round">
+    <path d="M-60 -96 h120 a60 60 0 0 1 60 60 v72 a60 60 0 0 1 -60 60 h-120 a60 60 0 0 1 -60 -60 v-72 a60 60 0 0 1 60 -60 z"/>
+    <circle cx="0" cy="12" r="36"/>
+  </g>
+  <text x="300" y="420" text-anchor="middle"
+        font-family="Manrope, Segoe UI, Helvetica, Arial, sans-serif" font-size="24"
+        font-weight="600" fill="#7A6494" fill-opacity="0.9">Фото: светлые брови после окрашивания</text>
+</g>
+</svg>

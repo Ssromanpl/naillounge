@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700" role="img" aria-label="Фото: брови в студии">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#F2ECF7"/><stop offset="1" stop-color="#DFD3EC"/>
+  </linearGradient>
+  <clipPath id="c"><rect width="900" height="700"/></clipPath>
+</defs>
+<g clip-path="url(#c)">
+  <rect width="900" height="700" fill="url(#g)"/>
+  <circle cx="441" cy="280" r="252" fill="#7A6494" opacity="0.12"/>
+  <g transform="rotate(12 666 504)" opacity="0.14">
+    <rect x="522" y="364" width="360" height="308" rx="98" fill="#7A6494"/>
+  </g>
+  <g transform="translate(450 315)" fill="none" stroke="#7A6494" stroke-opacity="0.55" stroke-width="5.6000000000000005" stroke-linejoin="round">
+    <path d="M-70 -112 h140 a70 70 0 0 1 70 70 v84 a70 70 0 0 1 -70 70 h-140 a70 70 0 0 1 -70 -70 v-84 a70 70 0 0 1 70 -70 z"/>
+    <circle cx="0" cy="14" r="42"/>
+  </g>
+  <text x="450" y="490" text-anchor="middle"
+        font-family="Manrope, Segoe UI, Helvetica, Arial, sans-serif" font-size="28"
+        font-weight="600" fill="#7A6494" fill-opacity="0.9">Фото: брови в студии</text>
+</g>
+</svg>

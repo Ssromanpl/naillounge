@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" width="1600" height="1200" role="img" aria-label="Фото студии: зал, кресла, свет">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#F2ECF7"/><stop offset="1" stop-color="#DFD3EC"/>
+  </linearGradient>
+  <clipPath id="c"><rect width="1600" height="1200"/></clipPath>
+</defs>
+<g clip-path="url(#c)">
+  <rect width="1600" height="1200" fill="url(#g)"/>
+  <circle cx="480" cy="756" r="396" fill="#7A6494" opacity="0.12"/>
+  <g transform="rotate(-24 1184 864)" opacity="0.14">
+    <rect x="928" y="624" width="640" height="528" rx="168" fill="#7A6494"/>
+  </g>
+  <g transform="translate(800 540)" fill="none" stroke="#7A6494" stroke-opacity="0.55" stroke-width="9.6" stroke-linejoin="round">
+    <path d="M-120 -192 h240 a120 120 0 0 1 120 120 v144 a120 120 0 0 1 -120 120 h-240 a120 120 0 0 1 -120 -120 v-144 a120 120 0 0 1 120 -120 z"/>
+    <circle cx="0" cy="24" r="72"/>
+  </g>
+  <text x="800" y="840" text-anchor="middle"
+        font-family="Manrope, Segoe UI, Helvetica, Arial, sans-serif" font-size="30"
+        font-weight="600" fill="#7A6494" fill-opacity="0.9">Фото студии: зал, кресла, свет</text>
+</g>
+</svg>

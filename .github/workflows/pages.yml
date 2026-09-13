@@ -1,0 +1,70 @@
+# Публикация черновика сайта nail.lounge на GitHub Pages.
+#
+# Запускается только вручную: Actions → «Публикация черновика nail.lounge»
+# → Run workflow. Автоматического запуска нет намеренно: в репозитории есть
+# вторая ветка со своим проектом и своей публикацией, а адрес GitHub Pages
+# у репозитория один — автозапуск перетирал бы чужой выложенный черновик.
+#
+# Собирает сайт в режиме DEMO=1: с плашкой «черновик» и закрытым от
+# поисковиков robots.txt, чтобы макет с придуманными ценами нельзя было
+# найти поиском и принять за настоящий сайт студии.
+name: Публикация черновика nail.lounge
+
+on:
+  # В отдельном репозитории сайта публикуем сразу при каждом пуше в main:
+  # там нет соседнего проекта, перетирать нечего.
+  push:
+    branches: [main]
+  # В общем репозитории запуск только ручной — чтобы не заменить
+  # выложенный черновик соседнего проекта.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Собрать сайт в режиме черновика
+        # SITE_URL — адрес, по которому сайт откроется на GitHub Pages.
+        # Без него canonical и превью для мессенджеров ссылались бы
+        # на будущий домен студии, и картинка в ссылке не загружалась бы.
+        run: DEMO=1 SITE_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}" node build.mjs
+
+      - name: Проверить собранное
+        run: node tools/check.mjs
+
+      - name: Отобрать только файлы сайта
+        run: |
+          mkdir -p _site
+          cp -r index.html manicure.html pedicure.html brows.html prices.html \
+                masters.html works.html reviews.html contacts.html gift.html \
+                404.html masters legal assets \
+                robots.txt sitemap.xml site.webmanifest .nojekyll _site/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

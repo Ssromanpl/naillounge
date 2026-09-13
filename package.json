@@ -1,0 +1,20 @@
+{
+  "name": "naillounge-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Сайт студии маникюра, педикюра и бровей nail.lounge, Минск, пр-т Независимости, 11/2",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "draft": "DEMO=1 node build.mjs",
+    "check": "node build.mjs && node tools/check.mjs",
+    "edit": "node tools/editor.mjs",
+    "phone": "node tools/serve-phone.mjs",
+    "photos": "PHOTOS=1 node build.mjs",
+    "pdf": "node tools/build-pdf.mjs",
+    "serve": "node build.mjs && python3 -m http.server 8080"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Студия маникюра, педикюра и бровей nail.lounge",
+  "short_name": "nail.lounge",
+  "description": "Маникюр, педикюр и брови в центре Минска, у метро «Площадь Ленина».",
+  "lang": "ru",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fcfafd",
+  "theme_color": "#fcfafd",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "assets/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

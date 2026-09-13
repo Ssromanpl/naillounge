@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Фото: Екатерина">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#EEF2EF"/><stop offset="1" stop-color="#D9E2DB"/>
+  </linearGradient>
+  <clipPath id="c"><rect width="600" height="800"/></clipPath>
+</defs>
+<g clip-path="url(#c)">
+  <rect width="600" height="800" fill="url(#g)"/>
+  <circle cx="360" cy="248" r="228" fill="#5C6E61" opacity="0.12"/>
+  <g transform="rotate(-2 444 576)" opacity="0.14">
+    <rect x="348" y="416" width="240" height="352" rx="84" fill="#5C6E61"/>
+  </g>
+  <g transform="translate(300 370)" fill="none" stroke="#5C6E61" stroke-opacity="0.55" stroke-width="4.8" stroke-linejoin="round">
+    <path d="M-60 -96 h120 a60 60 0 0 1 60 60 v72 a60 60 0 0 1 -60 60 h-120 a60 60 0 0 1 -60 -60 v-72 a60 60 0 0 1 60 -60 z"/>
+    <circle cx="0" cy="12" r="36"/>
+  </g>
+  <text x="300" y="520" text-anchor="middle"
+        font-family="Manrope, Segoe UI, Helvetica, Arial, sans-serif" font-size="24"
+        font-weight="600" fill="#5C6E61" fill-opacity="0.9">Фото: Екатерина</text>
+</g>
+</svg>
